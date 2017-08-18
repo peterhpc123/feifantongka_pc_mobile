@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>请稍等。。。</title>
+		<link rel="stylesheet" href="res/css/lightbox2-master/dist/css/lightbox.css" />
+		<style type="text/css">
+			.apply{
+				position: relative;
+    			top: 60%;
+    			left: 15%;
+			}
+			.activate{
+				position: relative;
+    			top: 60%;
+    			left: 15%;
+			}
+			#body{
+				width: 100%;
+				height: 662px;
+			}
+			body{
+				height: 2000px;
+			}
+			.quick_code{
+				position: fixed;
+				top: 70%;
+				right: 0;
+			}
+			.quick_code:hover {
+				
+			}
+			#quick_code_pic{
+				display: none;
+				position: fixed;
+    			top: 35%;
+    			left: 35%;
+    			z-index: 1;
+			}
+		</style>
+		<script type="text/javascript">
+			function quick_code_apper(){
+				document.getElementById("quick_code_pic").style.display="block";
+			}
+			function hide_code(){
+				document.getElementById("quick_code_pic").style.display="none";
+			}
+			
+	
+		</script>
+		
+	</head>
+	<body>
+		<div id="body">
+			<img id="quick_code_pic" src="res/images/QQ截图20170817155941.png" style="display: none;"/>
+			<a class="apply" href="res/images/QQ截图20170817155941.png" data-lightbox="image-1" ><img src="res/images/QQ截图20170817153734.png"></a>
+			<a class="activate" ><img src="res/images/QQ截图20170817153746.png"></a>
+			<a class="quick_code" ><img src="res/images/QQ截图20170817172230.png" onmousemove="quick_code_apper()" onmouseout="hide_code()"></a>
+		</div>
+		<script type="text/javascript" src="res/css/lightbox2-master/dist/js/lightbox-plus-jquery.js" >
+			lightbox.Option({
+				positionFromTop:35%
+			})
+		</script>
+	</body>
+</html>
