@@ -1,0 +1,58 @@
+.header{
+    		position: fixed;
+    		background-color: #454649;;
+			opacity: 0.7;
+			z-index: 9999;
+			width: 100%;
+			height: 33px;
+			top: 0px;
+    		left: -1px;
+    	}
+    	.swiper-slide{
+    		width: 351px;
+    	}
+    	/*.swiper-slide a:nth-child(3){
+		    position: absolute;
+		    top: 440px;
+		    left: 170px;
+		    height: 35px;
+		    width: 120px;
+    	}
+    	.swiper-slide a:nth-child(2){
+		    position: absolute;
+		    top: 440px;
+		    left: 30px;
+		    height: 35px;
+		    width: 120px;
+    	}*/
+    	.swiper-container {
+	        position: relative;
+		    width: 320px;
+		    height: 570px;
+		    top: -8px;
+		    left: -9px;
+		}
+		.header img{
+			position: absolute;
+		    width: 80px;
+			height: 25px;
+			vertical-align: middle;
+			left: 10px;
+			top: 5px;
+		} 
+		.top_user{
+			font-size: 12px;
+		    float: right;
+		    line-height: 33px;
+		    color: #e5e2e2;
+		    position: absolute;
+    		right: 7px;
+		} 
+		.phonepage1{
+			position: relative;
+			top: 32px;
+			width: 320px;
+		}
+		.a{
+			cursor: pointer;
+		}
