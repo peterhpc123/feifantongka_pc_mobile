@@ -9,7 +9,7 @@
     		left: -1px;
     	}
     	.swiper-slide{
-    		width: 351px;
+    		width: 100%;
     	}
     	/*.swiper-slide a:nth-child(3){
 		    position: absolute;
@@ -53,6 +53,21 @@
 			top: 32px;
 			width: 320px;
 		}
-		.a{
+		a{
 			cursor: pointer;
+			color: #e5e2e2 !important;
+		}
+		.advertisement1{
+		    margin: 0px auto;
+		    width: 290px;
+		    height: 135px;
+		    position: relative;
+		    top: 105px;
+		}
+		.advertisement2{
+			margin: 0px auto;
+		    width: 290px;
+		    height: 135px;
+		    position: relative;
+		    top: 105px;
 		}

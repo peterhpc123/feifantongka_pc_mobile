@@ -5,10 +5,14 @@
 		<title></title>
 		<link rel="stylesheet" href="res/css/header.css" />
 		<style type="text/css">
+			*{
+				padding: 0 0;
+				margin: 0 0;
+			}
 		.header{
 			position: fixed;
-			/*width: 100%;*/
-			min-width: 1076px;
+			width: 100%;
+			/*min-width: 1076px;*/
 			height: 50px;
 			background-color: #626262;
 			opacity: 0.7;
@@ -43,7 +47,18 @@
 		.body{
 			position: relative;
 		}
-
+		.body{
+			background-image: url(res/images/web_bac3_03.png);
+			background-size: cover;
+		}
+		.centerbox{
+			    width: 1038px;
+			    height: 720px;
+			    /* text-align: center; */
+			    /* margin: 0 0; */
+			    position: relative;
+			    margin: 0 auto;
+			}
 	</style>
 	</head>
 	<body>
@@ -51,12 +66,14 @@
 			<div class="header" id="header">
 				<img class="icon_logo_title_feifan" src="res/images/icon_logo_title_feifan.png" />
 				<div class="top_user">
-					<a class="headerlabel_ff"><img src="res/images/web_header_ff_03.png" /></a>
-					<a class="headerlabel_kqqb"><img src="res/images/web_header_kuaiqianwallet.png" /></a>
+					<a class="headerlabel_ff" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui"><img src="res/images/web_header_ff_03.png" /></a>
+					<a class="headerlabel_kqqb" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.bill99.kuaiqian"><img src="res/images/web_header_kuaiqianwallet.png" /></a>
 				</div>
 			</div>
+			<div class="centerbox">
 			<img class="activate_page" src="res/images/web_activatecard_03.png" />
-			<a class="download_app" href=""></a>
+			<a class="download_app" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui"></a>
+			</div>
 		</div>
 	</body>
 </html>

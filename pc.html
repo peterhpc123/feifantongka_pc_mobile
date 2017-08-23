@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>请稍等。。。</title>
+		<link rel="stylesheet" href="res/css/lightbox2-master/dist/css/lightbox.css" />
+		<style type="text/css">
+			*{
+				padding: 0 0;
+				margin: 0 0;
+			}
+			.apply{
+			    position: absolute;
+			    top: 548px;
+			    left: 41px;
+			    width: 200px;
+			    height: 52px;
+			    cursor: pointer;
+			}
+			.activate{
+				position: absolute;
+			    top: 547px;
+			    left: 271px;
+			    width: 200px;
+			    height: 52px;
+			    cursor: pointer;
+			}
+			#body_01{
+				width: 100%;
+				text-align: center;
+			}
+			.clearfix:after{content:".";display:block;height:759px;clear:both;visibility:hidden}
+			.clearfix{*+height:1%;}
+			body{
+				height: 2000px;
+				
+			}
+			.quick_code{
+				position: fixed;
+				top: 70%;
+				right: 0;
+				width: 120px;
+				height: 120px;
+			}
+			#quick_code_pic{
+				display: none;
+				position: fixed;
+    			top: 35%;
+    			left: 35%;
+    			z-index: 1;
+			}
+			.header{
+				position: fixed;
+				width: 100%;
+				
+				height: 50px;
+				background-color: #626262;
+				opacity: 0.7;
+				z-index: 9999;
+			}
+			.icon_logo_title_feifan{
+				position: absolute;
+			    /* line-height: 50px; */
+			    left: 50px;
+			    top: 5px;
+			}
+			.top_user{
+				position: absolute;
+			    right: 4%;
+			    top: 31%;
+			}
+			.title_01{
+				position: absolute;
+				top: 138px;
+				left: 181px;
+			}
+			.feifan_card_introudution{
+				position: absolute;
+				top: 325px;
+				left: 203px;
+				width: 500px;
+				height: 104px;
+			}
+			.quantity{
+				position: absolute;
+				width:259px;
+				height: 104px;
+				top: 173px;
+				right: 230px;
+			}
+			.homepage_picture{
+				/*position: absolute;
+				top: 58px;*/
+				
+			}
+			
+			#body_02 img{
+				/*width: 100%;*/
+				max-width: 1368px;
+			}
+			
+			#body_03 img{
+				/*width: 100%;*/
+				max-height:1368px ;
+			}
+			#body_04 img{
+				/*width: 100%;*/
+				max-width: 1368px;
+			}
+			#body_05 img{
+				/*width: 100%;*/
+				max-width: 1368px;
+			}
+			#body_06 img{
+				/*width: 100%;*/
+				max-width: 1368px;
+			}
+			div#body_03 {
+			    top: -5px;
+			}
+			div#body_04 {
+			    top: 4px;
+			}
+			.body1{
+				position: relative;
+				width: 100%;
+				text-align: center;
+			}
+			.word_link1{
+				position: absolute;
+			    top: 80%;
+			    width: 300px;
+			    height: 20px;
+			    left: 12%;
+			}
+			.word_link2{
+				position: absolute;
+			    top: 80%;
+			    width: 300px;
+			    height: 20px;
+			    left: 12%;
+			}
+			.word_link3{
+				position: absolute;
+			    top: 80%;
+			    width: 300px;
+			    height: 20px;
+			    left: 12%;
+			}
+			.word_link{
+				position: absolute;
+			    top: 80%;
+			    width: 105px;
+			    height: 20px;
+			    left: 69%;
+			    
+			}
+			.word_link3_1{
+				position: absolute;
+			    top: 80%;
+			    width: 300px;
+			    height: 20px;
+			    left: 14%;
+			}
+			.word_link4{
+			    position: absolute;
+			    top: 88.5%;
+			    width: 300px;
+			    height: 20px;
+			    left: 38%;
+			}
+			a{
+				cursor: pointer;
+			}
+			#body_01{
+				background-image: url(res/images/bac_01.png);
+				background-size:cover;
+				/*text-align: center;*/
+			}
+			#body_02{
+				background-image: url(res/images/web_bac2_02.png);
+				background-size: cover;
+				/*max-width: 1038px;*/
+			}
+			#body_03{
+				background-image: url(res/images/web_bac3_03.png);
+				background-size: cover;
+			}
+			#body_04{
+				background-image: url(res/images/web_bac2_02.png);
+				background-size: cover;
+			}
+			#body_05{
+				background-image: url(res/images/web_bac3_03.png);
+				background-size: cover;
+			}
+			#body_06{
+				background-image: url(res/images/web_homepage6_08.png);
+				background-size: cover;
+			
+			}
+			@media only screen and (min-width: 1102px) and (max-width: 1366px) {
+				/*#body_01{
+					background-image: url(res/images/web_homepage1_res_01.png);
+					background-size: cover;
+					width: 100%;
+					height: 768px;
+				}
+				.header{
+					display: none;
+				}*/
+				
+				
+			}
+			/*#dynamic_pic1{
+				background-image: url(res/images/web_dynamic_pic1_09.png);
+			}
+			#dynamic_pic2{
+				background-image: url(res/images/web_dynamic_pic2_11.png);
+			}
+			#dynamic_pic3{
+				background-image: url(res/images/web_dynamic_pic3_15.png);
+			}
+			#dynamic_pic4{
+				background-image: url(res/images/web_dynamic_pic4_16.png);
+			}*/
+			.body1{
+				height: 721px;
+			}
+			.link{
+				color: #67b1f6;
+			}
+			.link:hover{
+				text-decoration: underline;
+				cursor: pointer;
+			}
+			/*.dynamic_pic{
+				position: absolute;
+			    width: 493px;
+			    height: 120px;
+			    top: 261px;
+			    left: 47px;
+				transition: all .2s linear;
+			}
+			.dynamic_pic_active{
+				box-shadow: 2px 2px rgba(0,0,0,0.1);
+				transform: translate(0,-2px);
+			}*/
+			.advertisement1{
+			    width: 500px;
+			    height: 183px;
+			    position: absolute;
+			    top: 160px;
+			    right: 31px;
+			}
+			.advertisement2{
+		        width: 500px;
+			    height: 183px;
+			    position: absolute;
+			    top: 370px;
+			    right: 31px;
+			}
+			.homepage_picture{
+				padding-top: 3px;
+			}
+			.centerbox{
+			    width: 1038px;
+			    height: 720px;
+			    /* text-align: center; */
+			    /* margin: 0 0; */
+			    position: relative;
+			    margin: 0 auto;
+			}
+		</style>
+		<script type="text/javascript">
+			function quick_code_apper(){
+				document.getElementById("quick_code_pic").style.display="block";
+			}
+			function hide_code(){
+				document.getElementById("quick_code_pic").style.display="none";
+			}
+//			function addclassname(){
+////				alert(1);
+//				var myObj = document.getElementById("dynamic_pic1");
+////				alert(myObj.id);
+////          	myObj.className = "dynamic_pic dynamic_pic_active";
+////          	alert(myObj.className.arguments);
+//				myObj.style.transform="translate(0,-2px)";
+//				myObj.style.boxShadow="4px 4px rgba(0,0,0,0.1)";
+//				onmouseleave="reduceclassname()";
+////				alert(1);
+//          	
+////          	alert(myObj.className);
+//			}
+//			function reduceclassname(){
+//				var myObj = document.getElementById("dynamic_pic1");
+////				alert(myObj.className);
+//				myObj.style.transform="none";
+//				myObj.style.boxShadow="none";
+//				alert(1);
+//			}
+			
+		</script>
+		<script language="JavaScript">
+			if(screen.width<='736')
+			window.location = "mobile.html";
+			else{}
+		</script>
+		
+	</head>
+	<body>
+		<div id="body_01" class="body1 clearfix">
+			<div class="header" id="header">
+				<img class="icon_logo_title_feifan" src="res/images/icon_logo_title_feifan.png" />
+				<div class="top_user">
+					<a class="headerlabel_ff" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui"><img src="res/images/web_header_ff_03.png" /></a>
+					<a class="headerlabel_kqqb" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.bill99.kuaiqian"><img src="res/images/web_header_kuaiqianwallet.png" /></a>
+				</div>
+			</div>
+			<div class="centerbox">
+				<a class="apply" href="res/images/QQ截图20170817155941.png" data-lightbox="image-1" ></a>
+				<a class="activate" href="activite_card.html" ></a>
+				<img class="homepage_picture" src="res/images/phone/web_homepage.png"/>
+			</div>
+			<img id="quick_code_pic" src="res/images/QQ截图20170817155941.png" style="display: none;"/>
+			
+			<a class="quick_code" onmousemove="quick_code_apper()" onmouseout="hide_code()" style="cursor: default;"></a>
+		</div>
+        <div id="body_02" class="body1">
+        	<div class="centerbox">
+			<a class="link word_link1">下载飞凡App，打开飞凡卡了解更多内容</a>
+			<img src="res/images/web_homepage2_04.png" />
+			</div>
+		</div>
+		<div id="body_03" class="body1" style="padding-top: 3px;">
+			<div class="centerbox" style="">
+			<img src="res/images/web_homepage3_06.png" />
+			<a class="link word_link2">下载飞凡App，打开飞凡卡了解更多内容</a>
+			</div>
+		</div>
+		<div id="body_04" class="body1">
+			<div class="centerbox">
+			<img src="res/images/web_homepage4_06.png" />
+			<div class="advertisement1"></div>
+			<div class="advertisement2"></div>
+			<a class="link word_link" style="color: #a7a7a7;">更多尊享权益</a>
+			<a class="link word_link3_1">下载飞凡App，打开飞凡卡了解更多内容</a>
+			</div>
+		</div>
+		<div id="body_05" class="body1" style="padding-top: 4px;">
+			<div class="centerbox">
+			<img src="res/images/web_homepage5.png" />
+		
+			<a class="link word_link4" >下载飞凡App，打开飞凡卡了解更多内容</a>
+			</div>
+		</div>
+		<div id="body_06" class="body1" style="height: 502px;">
+			<div class="centerbox">
+			<img src="res/images/web_homepage6_08.png" />
+			</div>
+		</div>
+		<script type="text/javascript" src="res/css/lightbox2-master/dist/js/lightbox-plus-jquery.js" >
+			
+		</script>
+	</body>
+</html>

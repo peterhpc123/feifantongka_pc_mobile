@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="https://img.99bill.com/seashell/webapp/lib/framework7/1.2.3/css/framework7.ios.min.css">
+  	<link rel="stylesheet" href="https://img.99bill.com/seashell/webapp/lib/framework7/1.2.3/css/framework7.ios.colors.min.css">
+	<script src="https://img.99bill.com/seashell/webapp/lib/framework7/1.2.3/js/framework7.min.js"></script>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+    <style>
+    	*{
+    		padding:0;
+    		margin :0;
+    	}
+    	.header{
+    		position: fixed;
+    		background-color: rgba(0,0,0,0.7);
+			opacity: 0.7;
+			z-index: 9999;
+			width: 100%;
+			height: 33px;
+			top: 0px;
+    		/*left: -1px;*/
+    	}
+    	.swiper-slide{
+    		/*width: 351px;*/
+    	}
+    	 .activate{
+		        position: absolute;
+			    top: 73%;
+			    left: 53%;
+			    height: 7%;
+			    width: 38%;
+    	}
+    	.link_feifan1{
+    		position: absolute;
+		    top: 84%;
+		    left: 20%;
+		    height: 4%;
+		    width: 61%;
+    	}
+    	.link_feifan2{
+    		position: absolute;
+		    top: 84%;
+		    left: 20%;
+		    height: 4%;
+		    width: 61%;
+    	}
+    	
+    	.link_feifan3{
+		    position: absolute;
+		    top: 84%;
+		    left: 20%;
+		    height: 4%;
+		    width: 61%;
+    	}
+    	.link_feifan4{
+    		position: absolute;
+		    top: 84%;
+		    left: 20%;
+		    height: 4%;
+		    width: 61%;
+    	}
+    	 .apply{
+		    position: absolute;
+		    top: 73%;
+		    left: 9%;
+		    height: 7%;
+		    width: 38%;
+    	}
+    	.swiper-container {
+			  height: 100%;
+			}
+		.swiper-slide {
+		  background:white;
+		}
+		.swiper-slide span {
+		  text-align:center;
+		  display:block;
+		  margin:20px;
+		  font-size:21px;
+		}
+		.header img{
+			position: absolute;
+		    width: 80px;
+			height: 25px;
+			vertical-align: middle;
+			left: 10px;
+			top: 5px;
+		} 
+		.top_user{
+			font-size: 12px;
+		    float: right;
+		    line-height: 33px;
+		    color: #e5e2e2;
+		    position: absolute;
+    		right: 7px;
+		} 
+		.phonepage1{
+			position: relative;
+			top: 32px;
+			width: 320px;
+		}
+		a{
+			cursor: pointer;
+			color: #e5e2e2 !important;
+		}
+		.apply_deadline{
+		    position: absolute;
+		    top: 531px;
+		    left: 92px;
+		    height: 35px;
+		    width: 108px;
+		}
+		.activate_deadline{
+	    	position: absolute;
+		    top: 531px;
+		    left: 210px;
+		    height: 35px;
+		    width: 108px;
+		}
+		.link_lianming_card{
+		        position: absolute;
+			    top: 67%;
+			    left: 38%;
+			    width: 23%;
+			    height: 4%;
+		}
+		.swiper-slide1{
+			    background-image: url(/res/images/phone/web_phonepage1_02.png);
+		    background-size: 100% 96%;
+		    position: relative;
+		    top: 5%;
+		   
+		    /* background-position-x: 11%; */
+		    /*margin-top: 33px;*/
+		    /*background-repeat: no-repeat;*/
+		}
+		.swiper-slide2{
+			background-image: url(res/images/phone/web_phonepage2_05.png);
+			background-size: 100% 100%;
+		}
+		.swiper-slider3{
+			background-image: url(res/images/phone/web_phonepage3_04.png);
+			background-size: 100% 100%;
+		}
+		.swiper-slider4{
+			background-image: url(res/images/phone/web_phonepage4_08.png);
+			background-size: 100% 100%;
+		}
+		.swiper-slider5{
+			background-image: url(res/images/phone/web_phonepage5_08.png);
+			background-size: 100% 100%;
+		}
+		.swiper-slider6{
+			background-image: url(res/images/phone/web_phonepage6_09.png);
+			background-size: 100% 100%;
+		}
+		.blank{
+			background-color: white;
+			width: ;
+			height: ;
+			position: fixed;
+		}
+		.bottom_bar{
+			position: fixed;
+			bottom: 0;
+			background-image: url(res/images/phone/phone_deadline_10_02.png);
+			background-size: 96% 98%;
+			width: 100%;
+			height: 10%;
+			z-index: 99999;
+			display: none;
+		}
+		.bot_apply{
+			position: absolute;
+		    width: 30%;
+		    height: 65%;
+		    top: 12%;
+		    left: 27%;
+		}
+		.bot_activate{
+		    position: absolute;
+		    width: 30%;
+		    height: 65%;
+		    top: 12%;
+		    left: 62%;
+		}
+		.advertisement1{
+		    margin: 0px auto;
+		    width: 290px;
+		    height: 135px;
+		    position: relative;
+		    top: 105px;
+		}
+		.advertisement2{
+			margin: 0px auto;
+		    width: 290px;
+		    height: 135px;
+		    position: relative;
+		    top: 105px;
+		}
+    </style>
+</head>
+<body>
+	
+<div class="header" id="header">
+		<img class="icon_logo_title_feifan" src="res/images/phone/web_phone_header.png" />
+		<div class="top_user">
+			<a class="headerlabel_ff external" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui">飞凡</a>
+			<span>|</span>
+			<a class="headerlabel_kqqb external" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.bill99.kuaiqian">快钱钱包</a>
+		</div>
+		
+	</div>
+	<div class="swiper-container swiper-init" data-speed="400" data-space-between="40" data-pagination=".swiper-pagination">
+	    <div class="swiper-wrapper">
+	    	<div id="blank">
+					
+				</div>
+	        <div class="swiper-slide swiper-slide1">
+				<!--<img src="res/images/web_phonepage1_03.png" />-->
+				<!--<img class="phonepage1" src="res/images/phone/web_phonepage1_03.png" />-->
+				
+				<a class="apply external"  href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui"></a>
+
+				<a class="activate external"  href="phone_activate.html"></a>
+
+	        </div>
+	        <div class="swiper-slide swiper-slide2" style="">
+	        	<!--<img src="res/images/phone/web_phonepage2_04.png" />-->
+	        	<a class="link_feifan1 external" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui"></a>
+	        </div>
+	        <div class="swiper-slide swiper-slider3">
+	        	<!--<img src="res/images/phone/web_phonepage3_05.png" />-->
+	        	<a class="link_feifan2 external" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui"></a>
+	        </div>
+	        <div class="swiper-slide swiper-slider4">
+	        	<!--<img src="res/images/phone/web_phonepage4_06.png" />-->
+	        	<div class="advertisement1"></div>
+	        	<div class="advertisement2"></div>
+	        	<a class="link_lianming_card external" href="lianming_card.html"></a>
+	        	<a class="link_feifan3 external" href=""></a>
+	        </div>
+	        <div class="swiper-slide swiper-slider5">
+	        	<!--<img src="res/images/phone/web_phonepage5_07.png" />-->
+	        	<a class="link_feifan4 external" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui"></a>
+	        	<!--<a class="apply_deadline" href=""></a>
+	        	<a class="activate_deadline" href="phone_activate.html"></a>-->
+	        </div>
+	        <div class="swiper-slide swiper-slider6">
+	        	<!--<img src="res/images/phone/web_phonepage6_08.png" />-->
+	        </div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	    
+	    <!-- 如果需要导航按钮 -->
+	    <!--<div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div>-->
+	    
+	    <!-- 如果需要滚动条 -->
+	   <!-- <div class="swiper-scrollbar"></div>-->
+	</div>
+	<div class="bottom_bar" id="bottom_bar">
+		<a class="bot_apply external" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui"></a>
+		<a class="bot_activate external" href="phone_activate.html"></a>
+	</div>
+	
+	<script src="res/css/Swiper-3.4.2/dist/js/swiper.min.js"></script>
+	<script>        
+	  var myApp = new Framework7(); 
+ 
+  // Init slider and store its instance in mySwiper variable
+  var mySwiper = myApp.swiper('.swiper-container', {
+    pagination:'.swiper-pagination',
+    direction: 'vertical',
+    onSlideChangeStart: function(swiper) {
+//  	console.log(swiper);
+		if(swiper.activeIndex>0)
+		{
+//			alert(swiper.activeIndex);
+			document.getElementById("bottom_bar").style.display="block";
+		}
+		if(swiper.activeIndex==0)
+		{
+			document.getElementById("bottom_bar").style.display="none";
+		}
+//		alert(swiper.activeIndex);
+    }
+  });   
+	</script>
+</body>
+</html>

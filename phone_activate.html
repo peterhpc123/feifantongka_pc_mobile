@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title></title>
+    <link rel="stylesheet" href="https://img.99bill.com/seashell/webapp/lib/framework7/1.2.3/css/framework7.ios.min.css">
+  	<link rel="stylesheet" href="https://img.99bill.com/seashell/webapp/lib/framework7/1.2.3/css/framework7.ios.colors.min.css">
+	<script src="https://img.99bill.com/seashell/webapp/lib/framework7/1.2.3/js/framework7.min.js"></script>
     <script type="text/javascript">
     	
    		document.addEventListener('plusready', function(){
@@ -22,7 +25,7 @@
 			width: 100%;
 			height: 33px;
 			top: 0px;
-    		left: -1px;
+    		left: 0px;
     	}
     	.header img{
 			position: absolute;
@@ -56,22 +59,26 @@
 		    height: 66px;
 		    width: 225px;
 		}
+		.swiperslider7{
+			background-image: url(res/images/phone/web_activateprocedure2.png);
+			background-size: 100% 100%;
+		}
     </style>
 </head>
 <body>
 	<div class="header" id="header">
 		<img class="icon_logo_title_feifan" src="res/images/phone/web_phone_header.png" />
 		<div class="top_user">
-			<a class="headerlabel_ff">飞凡</a>
+			<a class="headerlabel_ff external" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui">飞凡</a>
 			<span>|</span>
-			<a class="headerlabel_kqqb">快钱钱包</a>
+			<a class="headerlabel_kqqb external" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.bill99.kuaiqian">快钱钱包</a>
 		</div>
 		
 	</div>
-	<div class="swiper-slide">
+	<div class="swiper-slide swiperslider7">
 		<!--<img src="res/images/web_phonepage1_03.png" />-->
-		<img class="phonepage1" src="res/images/phone/web_activateprocedure_03.png" />
-		<a class="gofeifan"></a>
+		<!--<img class="phonepage1" src="res/images/phone/web_activateprocedure_03.png" />-->
+		<a class="gofeifan external" href="https://a.app.qq.com/o/simple.jsp?pkgname=com.wanda.app.wanhui"></a>
     </div>
 	
 	
